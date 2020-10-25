@@ -1,0 +1,7 @@
+# https://www.codewars.com/kata/5641c3f809bf31f008000042
+
+def two_decimal_places(number):
+    number = str(number)
+    i = number.index(".")
+    s = number[0:i+3]
+    return float(s)
