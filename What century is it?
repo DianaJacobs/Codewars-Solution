@@ -1,0 +1,16 @@
+#https://www.codewars.com/kata/52fb87703c1351ebd200081f/train/python
+
+import math
+def what_century(year):
+    century = math.ceil(int(year) / 100)
+    century = str(century)
+    last = century[-1]
+    if century in ["11","12","13"]:
+        return century + "th"
+    if last == "1":
+        return century + "st"
+    elif last == "2":
+        return century + "nd"
+    elif last == "3":
+        return century + "rd"
+    return century + "th"
