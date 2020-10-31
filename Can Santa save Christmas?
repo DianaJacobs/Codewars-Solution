@@ -1,0 +1,9 @@
+#https://www.codewars.com/kata/5857e8bb9948644aa1000246/train/python
+
+def determine_time(arr):
+    total = 0
+    for element in arr:
+        hour, minutes, seconds = element.split(":")
+        time = int(hour) * 3600 + int(minutes) * 60 + int(seconds)
+        total += time
+    return total < 24 * 3600
