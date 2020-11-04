@@ -1,0 +1,12 @@
+#https://www.codewars.com/kata/5f77d62851f6bc0033616bd8/train/python
+
+def valid_spacing(s):
+    if s == "":
+        return True
+    s = s.split(" ")
+    arr = [el for el in s if el == ""]
+    if arr == []:
+        return True
+    else:
+        return False
+
