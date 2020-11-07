@@ -1,0 +1,8 @@
+# https://www.codewars.com/kata/583989556754d6f4c700018e
+
+def multiples(s1,s2,s3):
+    arr = []
+    for i in range(s1, s3, + 1):
+        if i % s1 == 0 and i % s2 == 0:
+            arr.append(i)
+    return arr
