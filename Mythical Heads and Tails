@@ -1,0 +1,7 @@
+# 7 kyu
+#https://www.codewars.com/kata/5751aa92f2dac7695d000fb0
+
+def beasts(heads, tails):
+    h = (heads - 2 * tails) / 3
+    o = tails - h
+    return [o, h] if o >= 0 and h >= 0 else "No solutions"
