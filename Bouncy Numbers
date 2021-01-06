@@ -1,0 +1,8 @@
+# https://www.codewars.com/kata/5769a78c6f2dea72b3000027/python
+
+def is_bouncy(num):
+    num = str(num)
+    if sorted(num) == list(num) or sorted(num)[:: -1] == list(num):
+        return False
+    else:
+        return True
