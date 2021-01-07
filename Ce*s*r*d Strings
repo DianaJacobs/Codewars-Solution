@@ -1,0 +1,11 @@
+# https://www.codewars.com/kata/5ff6060ed14f4100106d8e6f/train/python
+
+def uncensor(inf, dis):
+    s = ""
+    for el in inf:
+        if el == "*":
+            s += dis[0]
+            dis = dis[1:]
+        else:
+            s += el
+    return s
