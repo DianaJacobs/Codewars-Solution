@@ -1,0 +1,13 @@
+#https://www.codewars.com/kata/5672a98bdbdd995fad00000f/solutions/python/me/best_practice
+
+def rps(p1, p2):
+    rules = {
+        'rock': 'scissors',
+        'scissors': 'paper',
+        'paper': 'rock'
+    }
+    if rules[p1] == p2:
+        return "Player 1 won!"
+    elif rules[p2] == p1:
+        return "Player 2 won!"
+    return 'Draw!'
