@@ -1,0 +1,6 @@
+#https://www.codewars.com/kata/6071ef9cbe6ec400228d9531/solutions/python?filter=all&sort=best_practice
+
+def calculator(txt):
+    a, op, b = txt.split()
+    a, b = len(a), len(b)
+    return '.' * eval(f'{a} {op} {b}')
